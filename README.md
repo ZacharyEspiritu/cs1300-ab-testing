@@ -20,6 +20,7 @@ among the baseline(A) or variant(B) performed better.
 # Running the flask server
 
 These steps are used for running and testing locally.
+
 ## Running and testing it locally.
 Following command to be run on Mac OS terminal or WINDOWS powershell.
 
