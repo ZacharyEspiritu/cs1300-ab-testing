@@ -59,7 +59,7 @@
   <body style="height: 100%;">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="#" style="font-family: 'Abril Fatface', cursive;">
           Memphis Taxis
         </a>
 
@@ -97,20 +97,23 @@
               we've got you covered.
             </p>
             <br>
-            <button type="button" class="btn btn-default">Find your ride</button>
+            <button id="cta1" type="button" class="btn btn-default" >Find your ride</button>
           </div>
         </div>
       </div>
     </section>
     <section id="reviews" class="jumbotron jumbotron-fluid">
       <div class="container text-center">
-        <h1>See what users are saying</h1>
-        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+        <h1 style="font-family: 'Abril Fatface', cursive;">See what users are saying</h1>
+        <br>
+        <p>
+          "Truly, the greatest taxi service in the world"<br><br>— Steve Jobs
+        </p>
       </div>
     </section>
     <section id="services" class="container" style="padding-bottom: 30px;">
       <div class="text-center">
-        <h1>Ready for the ride of your life?</h1>
+        <h1 style="font-family: 'Abril Fatface', cursive;">Ready for the ride of your life?</h1>
       </div>
       <br>
       <div class="container">
@@ -277,13 +280,22 @@
             sendData(timeLoaded, 0.0, 0.0, uniq_session)
           });
 
+        $("#cta1").on("click", function(d) {
+              // Retrieve the object from storage
+              var clickTime = Date.now()
+              var clickObjectID = 'cta1'
+              console.log('Click Time:' + clickTime)
+              sendData(timeLoaded, clickTime, clickObjectID, uniq_session)
+              window.location.href = "/#services"
+
+        })
+
         $("#mp1").on("click", function(d) {
               // Retrieve the object from storage
               var clickTime = Date.now()
               var clickObjectID = 'mp1'
               console.log('Click Time:' + clickTime)
               sendData(timeLoaded, clickTime, clickObjectID, uniq_session)
-              // TODO: Feel free to make this point to different site
               window.location.href = "http://www.yellowcabofmemphis.com/"
 
         })
@@ -295,7 +307,6 @@
               var clickObjectID = 'mp2'
               console.log('Click Time:' + clickTime)
               sendData(timeLoaded, clickTime, clickObjectID, uniq_session)
-              // TODO: Feel free to make this point to different site
               window.location.href = "https://www.ridecharge.com/s/tn-memphis/taxi-sedan-limo-shuttle"
         })
 
@@ -305,7 +316,6 @@
               var clickObjectID = 'mp3'
               console.log('Click Time:' + clickTime)
               sendData(timeLoaded, clickTime, clickObjectID, uniq_session)
-              // TODO: Feel free to make this point to different site
               window.location.href = "https://www.uber.com/cities/memphis/"
         })
 
@@ -315,7 +325,6 @@
               var clickObjectID = 'mp4'
               console.log('Click Time:' + clickTime)
               sendData(timeLoaded, clickTime, clickObjectID, uniq_session)
-              // TODO: Feel free to make this point to different site
               window.location.href = "https://premierofmemphis.com/contact-us/"
         })
 
