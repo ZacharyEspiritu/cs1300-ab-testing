@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height: 100%;">
   <head>
     <script type="text/javascript">      
         var timerStart = Date.now();
@@ -47,58 +47,226 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- TODO: Feel free to modify anything inside main.css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="/static/main.css">
-    <link rel="stylesheet" href="/static/bulma.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     
-    <title>Find Memphis Taxis online</title>
+    <script src="https://use.fontawesome.com/068e74d89a.js"></script>
+
+    <title>Memphis Taxis</title>
   </head>
 
-  <body>
-    <header>
-      <h1>Memphis Taxis </h1>
-      <p>This page contains information about taxi and cab companies in Memphis, Tennessee.</p>
-      <p>Not endorsed by any of the companies listed, or the city of Memphis.</p>
-    </header>
+  <body style="height: 100%;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          Memphis Taxis
+        </a>
 
-    <!--
-    TODO: Feel free to modify image, change layouts, appearance etc anything.
-    Remember if you add any new buttons, you need to update the javascript file, for
-    corresponding button id, so that clicks of that button could be logged.
-
-    Easiest thing is to have just the two buttons we already have and try to play around
-    with layouts of it.
-    -->
-
-    <div class="vendor-wrapper">
-      <img src="/static/memphis.png" class="vendor-photo" />
-      <button class="vendor-book-button btn btn-primary" type="submit" id="mp1">Reserve with YellowCab
-          Taxis</button>
-                <p>Safe, Reliable Taxi Services from Yellow Cab and Checker Cab are available
-              in the Memphis Metro area 24 hours a day.</p>
-    </div>
-    <div class="vendor-wrapper">
-      <img src="/static/memphis2.png" class="vendor-photo" />
-      <button class="vendor-book-button btn btn-primary" type="submit" id="mp2">Reserve with RideCharge taxi</button>
-         <p>Our drivers are the most professional drivers in the industry. Our drivers
-              are licensed and required to successfully complete a formal training.</p>
-    </div>
-
-    <div class="vendor-wrapper">
-    <img src="/static/uber.png" class="vendor-photo" />
-   
-    <button class="vendor-book-button btn btn-primary" type="submit" id="mp3">Reserve with Memphis Uber</button>
-     <p> We are so much cheaper than taxis..! </p>
-    </div>
-
-    <div class="vendor-wrapper">
-      <img src="/static/premiere.png" class="vendor-photo" />
-      <button class="vendor-book-button btn btn-primary" type="submit" id="mp4">Reserve with Premier taxi</button>
-       <p>Our goal is to efficiently
-              transport our passengers in a safe, polite and timely manner at a fair
-              price.</p>
-    </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#reviews">Reviews</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section class="container" style="height: 80%; padding-bottom: 2em;">
+      <div class="row" style="height: 100%;">
+        <div class="col-md-5 vertical-center" style="height: 100%; display: flex; align-items: center;">
+          <img src="/static/taxidrawing.jpg" class="img-fluid">
+        </div>
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-6 vertical-center" style="height: 100%; display: flex; align-items: center;">
+          <div>
+            <h1 style="font-family: 'Abril Fatface', cursive; font-size: 4.5em;">Where Travel Happens</h1>
+            <br>
+            <p style="font-family: 'Roboto', sans-serif; font-size: 1.3em;">
+              When you're looking for a way to get away, a place where nothing 
+              can go wrong, the cheapest travel opportunities available, the
+              most expensive travel opportunities available, all of the travel
+              opportunities available, or just looking for a taxi in Memphis, 
+              we've got you covered.
+            </p>
+            <br>
+            <button type="button" class="btn btn-default">Find your ride</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="reviews" class="jumbotron jumbotron-fluid">
+      <div class="container text-center">
+        <h1>See what users are saying</h1>
+        <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      </div>
+    </section>
+    <section id="services" class="container" style="padding-bottom: 30px;">
+      <div class="text-center">
+        <h1>Ready for the ride of your life?</h1>
+      </div>
+      <br>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
+            <div class="card card-danger">
+              <div class="card-body text-center">
+                <h4 class="card-title" style="padding-top: 8px;">Yellow Cab</h4>
+                <h6 class="card-subtitle text-secondary">Safer than most taxis</h6>
+                <br>
+                <h6 class="card-subtitle text-secondary">Rates start at</h6>
+                <h4 class="text-success" style="padding-top: 8px;">$20</h4>
+              </div>
+              <ul class="list-group text-center">
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Airport transport
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Wheelchair-accessible
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Metered fares
+                </li>
+              </ul>
+              <div class="card-footer">
+                <a class="btn btn-lg btn-block btn-warning" id="mp1">
+                  <i class="fa fa-car"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
+            <div class="card card-danger">
+              <div class="card-body text-center">
+                <h4 class="card-title" style="padding-top: 8px;">RideChange</h4>
+                <h6 class="card-subtitle text-secondary">Cooler than most taxis</h6>
+                <br>
+                <h6 class="card-subtitle text-secondary">Rates start at</h6>
+                <h4 class="text-success" style="padding-top: 8px;">$20</h4>
+              </div>
+              <ul class="list-group text-center">
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Cleaned hourly
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Available 24/7
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Professional drivers
+                </li>
+              </ul>
+              <div class="card-footer">
+                <a class="btn btn-lg btn-block btn-info text-white" id="mp2">
+                  <i class="fa fa-car"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
+            <div class="card card-danger">
+              <div class="card-body text-center">
+                <h4 class="card-title" style="padding-top: 8px;">Uber</h4>
+                <h6 class="card-subtitle text-secondary">Cheaper than most taxis</h6>
+                <br>
+                <h6 class="card-subtitle text-secondary">Rates start at</h6>
+                <h4 class="text-success" style="padding-top: 8px;">$1</h4>
+              </div>
+              <ul class="list-group text-center">
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Flat rate
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Background checks
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Neighborhood drivers
+                </li>
+              </ul>
+              <div class="card-footer">
+                <a class="btn btn-lg btn-block btn-primary text-white" id="mp3">
+                  <i class="fa fa-car"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 text-center">
+            <div class="card card-danger">
+              <div class="card-body text-center">
+                <h4 class="card-title" style="padding-top: 8px;">Premier</h4>
+                <h6 class="card-subtitle text-secondary">Faster than most taxis</h6>
+                <br>
+                <h6 class="card-subtitle text-secondary">Rates start at</h6>
+                <h4 class="text-success" style="padding-top: 8px;">$100</h4>
+              </div>
+              <ul class="list-group text-center">
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Luxury travel
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Fast turnaround
+                </li>
+                <li class="list-group-item">
+                  <i class="fa fa-check"></i> Personal chauffeur
+                </li>
+              </ul>
+              <div class="card-footer">
+                <a class="btn btn-lg btn-block btn-danger text-white" id="mp4">
+                  <i class="fa fa-car"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="page-footer text-white" style="padding: 50px; background-color: #2c3e50;">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 ml-auto">
+            <h5 class="title mb-3">Footer Content</h5>
+            <p>Here you can use rows and columns here to organize your footer content.</p>
+          </div>
+          <hr class="w-100 clearfix d-sm-none">
+          <div class="col-lg-2 col-md-6 ml-auto">
+            <h5 class="title mb-3">Links</h5>
+            <ul>
+              <li><a href="#!">Link 1</a></li>
+              <li><a href="#!">Link 2</a></li>
+              <li><a href="#!">Link 3</a></li>
+              <li><a href="#!">Link 4</a></li>
+            </ul>
+          </div>
+          <hr class="hidden-md-up">
+          <div class="col-lg-2 col-md-6 ml-auto">
+            <h5 class="title mb-3">Links</h5>
+            <ul>
+              <li><a href="#!">Link 1</a></li>
+              <li><a href="#!">Link 2</a></li>
+              <li><a href="#!">Link 3</a></li>
+              <li><a href="#!">Link 4</a></li>
+            </ul>
+          </div>
+          <hr class="hidden-md-up">
+          <div class="col-lg-2 col-md-6 ml-auto">
+            <h5 class="title mb-3">Links</h5>
+            <ul>
+              <li><a href="#!">Link 1</a></li>
+              <li><a href="#!">Link 2</a></li>
+              <li><a href="#!">Link 3</a></li>
+              <li><a href="#!">Link 4</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+        
 
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>
@@ -153,7 +321,7 @@
 
 
         function sendData(timeLoaded, clickTime, clickObjectID, cook){
-              var dataObj = { 'version': 'A', 'pageLoadTime': timeLoaded , 'clickTime': clickTime , 'HtmlElementID': clickObjectID, 'UniqueSession' :uniq_session};
+              var dataObj = { 'version': 'A', 'pageLoadTime': timeLoaded , 'clickTime': clickTime , 'HtmlElementID': clickObjectID, 'UniqueSession' :uniq_session };
               console.log(JSON.stringify(dataObj))
                $.ajax({
                    type: 'POST',
