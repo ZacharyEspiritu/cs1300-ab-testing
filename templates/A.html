@@ -65,50 +65,126 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#reviews">Reviews</a>
+            <li class="nav-item" style="cursor: pointer;">
+              <a class="nav-link" id="nav-cta1" href="#reviews">Reviews</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Services</a>
+            <li class="nav-item" style="cursor: pointer;">
+              <a class="nav-link" id="nav-cta2" href="#services">Services</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#services">Contact</a>
+            <li class="nav-item" style="cursor: pointer;">
+              <a class="nav-link" id="nav-cta3" href="#services">Contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <section class="container" style="height: 80%; padding-bottom: 2em;">
+    <section class="container" style="height: 80%;">
       <div class="row" style="height: 100%;">
-        <div class="col-md-5 vertical-center" style="height: 100%; display: flex; align-items: center;">
+        <div class="col-md-5" style="height: 100%; display: flex; align-items: center;">
           <img src="/static/taxidrawing.jpg" class="img-fluid">
         </div>
         <div class="col-md-1">
         </div>
-        <div class="col-md-6 vertical-center" style="height: 100%; display: flex; align-items: center;">
+        <div class="col-md-6" style="height: 100%; display: flex; align-items: center;">
           <div>
             <h1 style="font-family: 'Abril Fatface', cursive; font-size: 4.5em;">Where Travel Happens</h1>
             <br>
             <p style="font-family: 'Roboto', sans-serif; font-size: 1.3em;">
-              When you're looking for a way to get away, a place where nothing 
+              If you're looking for a way to get away, a place where nothing 
               can go wrong, the cheapest travel opportunities available, the
-              most expensive travel opportunities available, all of the travel
+              most luxurious travel opportunities available, all of the travel
               opportunities available, or just looking for a taxi in Memphis, 
-              we've got you covered.
+              we've got you covered!
             </p>
             <br>
-            <button id="cta1" type="button" class="btn btn-default" >Find your ride</button>
+            <a href="#services"><button id="cta1" type="button" class="btn btn-default test">Find your ride</button></a>
           </div>
         </div>
       </div>
     </section>
     <section id="reviews" class="jumbotron jumbotron-fluid">
       <div class="container text-center">
-        <h1 style="font-family: 'Abril Fatface', cursive;">See what users are saying</h1>
+        <h1 style="font-family: 'Abril Fatface', cursive;">See what users are saying:</h1>
         <br>
-        <p>
-          "Truly, the greatest taxi service in the world"<br><br>— Steve Jobs
-        </p>
+        <div class="text-center pb-3">
+          <div class="row text-center">
+            <div class="col-md-4 mb-r">
+              <div class="card" style="padding: 10px;">
+                <br>
+                <div class="avatar">
+                  <img src="https://www.biography.com/.image/c_fill%2Ccs_srgb%2Cg_face%2Ch_300%2Cq_80%2Cw_300/MTE5NDg0MDU0NTIzODQwMDE1/steven-jobs-9354805-2-402.jpg" class="rounded-circle z-depth-1 img-responsive" style="height: 200px; width: 200px;">
+                </div>
+                <br>
+                <h4 class="mb-3">Steve Jobs</h4>
+                <h6 class="mb-3 font-bold text-secondary">Professional Innovator</h6>
+                <p>
+                  <i class="fa fa-quote-left"></i>
+                  Memphis Taxis is the most innovatative taxi service in the world.
+                </p>
+
+                <!--design based off of https://mdbootstrap.com/sections/testimonials-sections/-->
+                <div class="text-warning">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                </div>
+                <br>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-r">
+              <div class="card" style="padding: 10px;">
+                <br>
+                <div class="avatar">
+                  <img src="/static/dean-baquet.jpg" class="rounded-circle z-depth-1 img-responsive" style="height: 200px; width: 200px;">
+                </div>
+                <br>
+                <h4 class="mb-3">Dean Baquet</h4>
+                <h6 class="mb-3 font-bold text-secondary">Editor at <em>The New York Times</em></h6>
+                <p>
+                  <i class="fa fa-quote-left"></i> Wow, I wish we had something like this in New York.
+                </p>
+
+                <!--design based off of https://mdbootstrap.com/sections/testimonials-sections/-->
+                <div class="text-warning">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half-full"></i>
+                </div>
+                <br>
+              </div>
+            </div>
+
+            <div class="col-md-4 mb-r">
+              <div class="card" style="padding: 10px;">
+                <br>
+                <div class="avatar">
+                  <img src="https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAeJAAAAJDM5ZWE0N2UxLTVlODUtNGM3Ny05ZWM0LTA3ZDllNDNlZGU0Mg.jpg" class="rounded-circle z-depth-1 img-responsive" style="height: 200px; width: 200px;">
+                </div>
+                <br>
+                <h4 class="mb-3">Jeff Huang</h4>
+                <h6 class="mb-3 font-bold text-secondary">Interface Extraordinare</h6>
+                <p>
+                  <i class="fa fa-quote-left"></i> This taxi company has one of the best websites I've ever seen.
+                </p>
+
+                <!--design based off of https://mdbootstrap.com/sections/testimonials-sections/-->
+                <div class="text-warning">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-o"></i>
+                </div>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
     <section id="services" class="container" style="padding-bottom: 30px;">
@@ -139,7 +215,7 @@
                 </li>
               </ul>
               <div class="card-footer">
-                <a class="btn btn-lg btn-block btn-warning" id="mp1">
+                <a class="btn btn-lg btn-block btn-warning text-white" style="cursor: pointer;" id="mp1">
                   <i class="fa fa-car"></i>
                 </a>
               </div>
@@ -166,7 +242,7 @@
                 </li>
               </ul>
               <div class="card-footer">
-                <a class="btn btn-lg btn-block btn-info text-white" id="mp2">
+                <a class="btn btn-lg btn-block btn-info text-white" style="cursor: pointer;" id="mp2">
                   <i class="fa fa-car"></i>
                 </a>
               </div>
@@ -193,7 +269,7 @@
                 </li>
               </ul>
               <div class="card-footer">
-                <a class="btn btn-lg btn-block btn-primary text-white" id="mp3">
+                <a class="btn btn-lg btn-block btn-primary text-white" style="cursor: pointer;" id="mp3">
                   <i class="fa fa-car"></i>
                 </a>
               </div>
@@ -220,7 +296,7 @@
                 </li>
               </ul>
               <div class="card-footer">
-                <a class="btn btn-lg btn-block btn-danger text-white" id="mp4">
+                <a class="btn btn-lg btn-block btn-danger text-white" style="cursor: pointer;" id="mp4">
                   <i class="fa fa-car"></i>
                 </a>
               </div>
@@ -245,6 +321,34 @@
             console.log('Page Load:' + timeLoaded)
             sendData(timeLoaded, 0.0, 0.0, uniq_session)
           });
+
+          $("#nav-cta1").on("click", function(d) {
+                // Retrieve the object from storage
+                var clickTime = Date.now()
+                var clickObjectID = 'nav-cta1'
+                console.log('Click Time:' + clickTime)
+                sendData(timeLoaded, clickTime, clickObjectID, uniq_session)
+                window.location.href = "/#reviews"
+
+          })
+          $("#nav-cta2").on("click", function(d) {
+                // Retrieve the object from storage
+                var clickTime = Date.now()
+                var clickObjectID = 'nav-cta2'
+                console.log('Click Time:' + clickTime)
+                sendData(timeLoaded, clickTime, clickObjectID, uniq_session)
+                window.location.href = "/#services"
+
+          })
+          $("#nav-cta3").on("click", function(d) {
+                // Retrieve the object from storage
+                var clickTime = Date.now()
+                var clickObjectID = 'nav-cta3'
+                console.log('Click Time:' + clickTime)
+                sendData(timeLoaded, clickTime, clickObjectID, uniq_session)
+                window.location.href = "/#services"
+
+          })
 
         $("#cta1").on("click", function(d) {
               // Retrieve the object from storage
