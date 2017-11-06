@@ -1,7 +1,6 @@
 # A/B Testing
 
-# NOTE: This file has some general information. Please read the
-Mac/Windows specific readme file for specific instructions.
+# NOTE: This file has some general information. Please read the Mac/Windows specific readme file for specific instructions.
 
 ## Overview
 
